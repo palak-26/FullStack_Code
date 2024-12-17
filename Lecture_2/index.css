@@ -1,0 +1,19 @@
+#parent{
+    background-color: purple;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#child{
+    background-color: beige;
+    height: 50%;
+    width: 50%;
+    
+}
+li{
+    font-size: 2em;
+    /* font-size: 2rem; */
+}
