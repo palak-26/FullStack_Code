@@ -1,12 +1,12 @@
 #card{
-    height: 300px;
+    height: 280px;
     width: 200px;
     
     /* border: 2px solid black; */
     border-radius: 10px;
     position: relative;
     margin: 3px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #img{
     /* background-image: url("wallpaperflare.com_wallpaper.jpg"); */
@@ -19,13 +19,13 @@
     height: 70px;
     width: 70px;
     position: absolute;
-    left:30%;
-    top: 25%;
+    left:32%;
+    top: 20%;
     border-radius: 50%;
 }
 #text{
    position: relative;
-   top: 90px;
+   top: 40px;
 }
 #text1{
     text-align: center;
@@ -36,10 +36,10 @@
 }
 #button{
     position: relative;
-    top: 120px;
+    top: 70px;
     text-align: center;
     background-color: blueviolet;
-    height: 34px;
+    height: 40px;
     color: white;
     display: flex;
     justify-content: center;
