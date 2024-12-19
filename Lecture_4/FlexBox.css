@@ -1,0 +1,38 @@
+#parent{
+    height: 400px;
+    width: 100vw;
+    border: 2px solid black;
+    display: flex;
+    /* justify-content: baseline; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+}
+
+#one{
+    height: 100px;
+    width: 100px;
+    background-color:  #FFFCEA;
+}
+#two{
+    height: 100px;
+    width: 100px;
+    background-color: #A5F2E7;
+}
+#three{
+    height: 100px;
+    width: 100px;
+    background-color: #8983F3;
+}
+#four{
+    height: 100px;
+    width: 100px;
+    background-color: #3A0077;
+}

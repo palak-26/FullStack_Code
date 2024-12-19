@@ -37,7 +37,7 @@
 #button{
     position: relative;
     top: 70px;
-    text-align: center;
+    /* text-align: center; */
     background-color: blueviolet;
     height: 40px;
     color: white;
