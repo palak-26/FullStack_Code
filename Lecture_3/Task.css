@@ -1,0 +1,67 @@
+#card{
+    height: 300px;
+    width: 200px;
+    
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    position: relative;
+    margin: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#img{
+    /* background-image: url("wallpaperflare.com_wallpaper.jpg"); */
+    height: 100px;
+    width: 100%;
+    
+}
+#profile{
+    /* background-image: url("Palak2.jpg"); */
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left:30%;
+    top: 25%;
+    border-radius: 50%;
+}
+#text{
+   position: relative;
+   top: 90px;
+}
+#text1{
+    text-align: center;
+    
+}
+#text2{
+    text-align: center;
+}
+#button{
+    position: relative;
+    top: 120px;
+    text-align: center;
+    background-color: blueviolet;
+    height: 34px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+img{
+    height: 100%;
+    width: 100%;
+    
+}
+#main{
+    border-radius: 50%;
+}
+#main1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
