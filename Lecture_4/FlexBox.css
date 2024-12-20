@@ -8,18 +8,21 @@
     /* justify-content: end; */
     /* justify-content: space-around; */
     /* justify-content: space-between; */
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     /* flex-direction: column; */
     /* flex-direction: row; */
     /* flex-direction: row-reverse; */
     /* flex-direction: column-reverse; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
 }
 
 #one{
     height: 100px;
     width: 100px;
-    background-color:  #FFFCEA;
+    /* background-color:  #FFFCEA; */
+    background-color: black;
 }
 #two{
     height: 100px;
