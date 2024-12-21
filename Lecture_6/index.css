@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parent{
+    height: 400px;
+    width: 100vw;
+    border: 2px solid black;
+    
+    /* display: flex;
+    flex-direction: column;
+     */
+     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+#parent div{
+    height: 100px;
+    width: 100px;
+    transition: 3s;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#parent div:nth-of-type(1){
+    background-color: #213555;
+    transition-timing-function: ease-in;
+
+}
+#parent div:nth-of-type(2){
+    background-color: #3E5879;
+    transition-timing-function: ease-out;
+
+}
+#parent div:nth-of-type(3){
+    background-color: #D8C4B6;
+    transition-timing-function: ease-in-out;
+}
+#parent div:nth-of-type(4){
+    background-color: #F5EFE7;
+    transition-timing-function: linear;
+}
+#parent:hover div{
+    margin-left: 1109px;
+    /* align-items: end; */
+    /* border-radius: 50%; */
+    /* width: 100vw; */
+    background-image: url("Groot.png");
+    background-size: contain;
+    border-radius: 50%;
+}

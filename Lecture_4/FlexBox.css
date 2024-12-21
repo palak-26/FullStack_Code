@@ -16,6 +16,7 @@
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #one{
@@ -23,19 +24,27 @@
     width: 100px;
     /* background-color:  #FFFCEA; */
     background-color: black;
+    display: flex;
+    flex-grow: 1;
 }
 #two{
     height: 100px;
     width: 100px;
     background-color: #A5F2E7;
+    display: flex;
+    flex-grow: 2;
 }
 #three{
     height: 100px;
     width: 100px;
     background-color: #8983F3;
+    display: flex;
+    flex-grow: 3;
 }
 #four{
     height: 100px;
     width: 100px;
     background-color: #3A0077;
+    display: flex;
+    flex-grow: 4;
 }
