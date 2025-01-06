@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(226,8,38,1) 0%, rgba(22,0,126,1) 100%);
+    /* border: 3px solid black; */
+    animation-name: Ball;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s;
+    animation-timing-function: ease-in;
+    background-image: url("Firefox_Logo.png");
+    background-size: cover;
+    transform: rotate(180deg);
+}
+@keyframes Ball {
+  
+    100%{
+        /* transform: rotateX(360deg); */
+       
+        transform: rotate(360deg); 
+        transform: translateY(500px);
+    }
+    
+}
