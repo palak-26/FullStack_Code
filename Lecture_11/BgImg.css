@@ -1,0 +1,26 @@
+div{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    background-size: 20% 30%;
+    /* background: linear-gradient(red,blue); */
+    background: linear-gradient(orange,white, green);
+    /* background: linear-gradient(to right, red ,blue); */
+    /* background: linear-gradient(to bottom, green, yellow,red); */
+    /* background: radial-gradient(red,white); */
+    /* background: radial-gradient(ellipse, blue,orange,green); */
+    /* background-image: url("https://images.unsplash.com/photo-1736160388319-c99c1dd44099?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D"); */
+}
+#logo{
+    background-image: url("logo.png");
+    background-size: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+:root{
+    --bg-color--red: #dd4d33;
+    
+}

@@ -1,0 +1,24 @@
+#main{
+    height: 100vh;
+    width: 100vw;
+    border: 5px solid gray;
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: 200px 200px 300px 400px;
+    grid-template-rows: 100px 100px ;
+    /* grid-auto-flow: 50px;     */
+    /* grid-auto-flow: column; */
+    grid-auto-flow: column;
+
+}
+
+.one{
+    border: 2px solid brown;
+    margin: 2px;
+}
+#one{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}

@@ -1,0 +1,8 @@
+#card{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    height: 300px;
+}
