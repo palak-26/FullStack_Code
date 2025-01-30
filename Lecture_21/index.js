@@ -31,42 +31,56 @@
 //     })
 // })
 
-let form= document.querySelector('form')
+// let form= document.querySelector('form')
 
-form.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    console.log(form[0].value);
-    console.log(form[1].value);
-    let data ={
-        FirstName: form[0].value,
-        LastName: form[1].value,
-        Email: form[2].value,
-        Password: form[3].value
-    }
-    localStorage.setItem('user',JSON.stringify(data))
+// form.addEventListener('submit',(e)=>{
+//     e.preventDefault()
+//     console.log(form[0].value);
+//     console.log(form[1].value);
+//     let data ={
+//         FirstName: form[0].value,
+//         LastName: form[1].value,
+//         Email: form[2].value,
+//         Password: form[3].value
+//     }
+//     localStorage.setItem('user',JSON.stringify(data))
 
-})
+// })
 
-let login= document.querySelector('#Login')
+// let login= document.querySelector('#Login')
 
-login.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    let userData=localStorage.getItem('user')
-    let parseData =JSON.parse(userData);
-    if(login[0].value==parseData.Email && login[1].value==parseData.Password)
-    {
-        alert('Logged In Successfully!!!')
-    }
-    else{
-        alert('Enter correct credentials!!!')
-    }
+// login.addEventListener('submit',(e)=>{
+//     e.preventDefault()
+//     let userData=localStorage.getItem('user')
+//     let parseData =JSON.parse(userData);
+//     if(login[0].value==parseData.Email && login[1].value==parseData.Password)
+//     {
+//         alert('Logged In Successfully!!!')
+//     }
+//     else{
+//         alert('Enter correct credentials!!!')
+//     }
    
     
 
 
-})
+// })
 
 
 // btn.addEventListener('click',()=>{
 //     h1.innerText=inp.val
 // })
+
+
+let inp = document.querySelector('input')
+let data = document.querySelector('ul')
+let btn= document.querySelector('button')
+
+
+
+    btn.addEventListener('click',()=>{
+        let li = document.createElement('li')
+        li.innerText = inp.value;
+        data.appendChild(li)
+        inp.value=" "
+    })
