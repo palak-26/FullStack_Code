@@ -257,6 +257,7 @@
 // import React, { useState } from 'react'
 // import "./App.css"
 // const App = () => {
+//   let i=true
 //   let [apiData,SetApiData]=useState([])
 //   fetch('https://dummyjson.com/recipes').then((res)=>{
 //     return res.json()
@@ -264,11 +265,28 @@
 //   console.log(data);
 //   SetApiData(data.recipes)
 // })
+// function rem(img){
+//   if(i){
+//     img.remove()
+//     i=false
+//   }
+//   else{
+//     i=true
+//   }
+// }
+// function rem(index){
+//  let arr= apiData.image.filter((a,i)=>{
+//     return i!= index;
+//   })
+//   SetApiData(arr)
+
+// }
+
 //   return (
 //     <div id='card'>
 //       {
 //         apiData.map((val)=>
-//         { return(<div>
+//         { return(<div key={index} onClick={()=>rem(index)} >
 //           <img height="250px" src={val.image} alt="" />
 //           <h3>{val.name}</h3>
 //         </div>)
@@ -299,32 +317,180 @@
 // export default App
 
 
-import React, { useReducer } from 'react'
+// import React, { useReducer } from 'react'
+
+// const App = () => {
+//   function reducer(count,action){
+//     if(action.type=='incre'){
+//       return count+1
+//     }
+//     else if (action.type ='decre'){
+//       return count-1
+//     }
+//     else if (action.type =='reset'){
+//       return 0
+//     }
+//   }
+//   let [count,dispatch] =useReducer(reducer,0)
+//   function func1(){
+//     dispatch({
+//       type:'incre'
+//     })
+//   }
+//   return (
+//     <div>
+//       <h2>{count}</h2>
+//       <button onClick={func1}>Increment</button>
+//       <button onClick={()=>{dispatch({type:'reset'})}}>Reset</button>
+//       <button onClick={()=>{dispatch({type:'decre'})}}>Decrement</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Nav from './Nav'
+// import Home from './Home'
+// import About from './About'
+// import Contact from './Contact'
+// import SignUp from './SignUp'
+// import { Route, Routes} from 'react-router-dom'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Nav/>
+//       <Routes>
+//         <Route path='/' element={<Home/>}/>
+//         <Route path='/About' element={<About/>} />
+//         <Route path='/Contact' element={<Contact/>} />
+//         <Route path='/SignUp' element={<SignUp/>} />
+
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   let [input,setInput] = useState()
+//   let [color,SetColor] = useState()
+//   // let [data,setData]= useState([])
+//   // let arr=[]
+//   function func1(e) {
+//     setInput(e.target.value);
+//   }
+//   // function func2(){
+//   //   for (let i =1;i<=input;i++){
+//   //     arr.push(i)
+//   //   }
+//   //   setData(arr)
+//   //   setInput('')
+    
+//   // }
+//   function func2(){
+//     SetColor(input)
+//   }
+//   return (
+//     <div style={{backgroundColor:color}}>
+     
+      
+    
+//         <fieldset>
+//           <legend>Form</legend>
+//           <input onChange={func1} type="text" placeholder='Enter the number'/>
+//           <br /><br />
+//           <button onClick={func2} type='submit'>Submit</button>
+//           {/* <p>
+//           {
+//         data.map((a)=>{
+//           return(
+//             <>
+//           {a}
+//           </>
+//           ) 
+//         })
+//       }
+//           </p> */}
+//         </fieldset>
+      
+     
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   let [input, setInput] = useState("");
+//   let [data, setData] = useState([]);
+
+//   function func1(e) {
+//     setInput(e.target.value);
+//   }
+
+//   function func2() {
+   
+//       setData([...data, input]);
+//       setInput(""); // Clear input after adding
+    
+//   }
+
+//   function del(index) {
+//     setData(data.filter((a, i) => i !== index)); // Remove item by index
+//   }
+
+//   return (
+//     <div>
+//       <fieldset>
+//         <legend>ToDo List</legend>
+//         <input type="text" onChange={func1} value={input} placeholder="Enter your Data" />
+//       <button onClick={func2}>Add</button>
+      
+//         {data.map((a, index) => (
+//           <ul>
+//           <li   >
+//             {a}
+//           </li>
+//           <button  key={index} onClick={()=> del(index)}>Delete</button>
+//           <button>Edit</button>
+//           </ul>
+//         ))}
+       
+       
+//       {/* <button key={index} onClick={()=> del(index)}>Delete</button> */}
+//       </fieldset>
+//     </div> 
+//   );
+// };
+
+// export default App;
+
+
+
+import React,{useState} from 'react'
+import Todo from './ToDoList'
+import { Route, Routes } from 'react-router-dom'
+import Edit from './Edit'
+
 
 const App = () => {
-  function reducer(count,action){
-    if(action.type=='incre'){
-      return count+1
-    }
-    else if (action.type =='decre'){
-      return count-1
-    }
-    else if (action.type =='reset'){
-      return 0
-    }
-  }
-  let [count,dispatch] =useReducer(reducer,0)
-  function func1(){
-    dispatch({
-      type:'incre'
-    })
-  }
+  let [data, setData] = useState([]);
+  let [newTodo,setNewTodo] =useState()
   return (
     <div>
-      <h2>{count}</h2>
-      <button onClick={func1}>Increment</button>
-      <button onClick={()=>{dispatch({type:'reset'})}}>Reset</button>
-      <button onClick={()=>{dispatch({type:'decre'})}}>Decrement</button>
+      <Routes>
+        <Route path='/'   element={  <Todo data={data} newTodo={newTodo} setData={setData}/>}/>
+        <Route path='/edit/:id'   element={  <Edit data={data} newTodo={newTodo} setNewTodo={setNewTodo} setData={setData}/>}/>
+      </Routes>
+    
     </div>
   )
 }
