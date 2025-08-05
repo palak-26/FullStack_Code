@@ -82,7 +82,7 @@ const App = () => {
          />
         <button onClick={copyPasswordToClip} className='bg-blue-800 rounded-e-xl p-4 h-10 flex items-center font-semibold text-white cursor-pointer outline-none'>Copy</button>
         </div>
-        <div className='w-full max-w- flex p-2 gap-x-2 text-white font-semibold'>
+        <div className='w-full max-w- flex p-2 gap-x-1 text-white font-semibold'>
           <input 
         id='length'
         type="range" 
